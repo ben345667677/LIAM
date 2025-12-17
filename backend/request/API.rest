@@ -1,0 +1,19 @@
+POST localhost:3000/api/register
+Content-Type: application/json
+
+{
+  "email": "t1estuser@example.com",
+  "password": "testpassword"
+}
+###
+post http://localhost:3000/api/newShift
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com",
+  "password": "testpassword",
+  "employeeName": "BEN",
+  "checkIn": "16:12",
+  "checkOut": "31213",
+  "createdAt": "16:976"
+}
