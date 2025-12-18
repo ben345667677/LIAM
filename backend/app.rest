@@ -1,0 +1,21 @@
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com",
+  "password": "testpassword"
+}
+###
+@ACCESS_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTQyODRmNDE5YTgyNmIzMjdkNjE1NDYiLCJyb2xlIjoidXNlciIsImlhdCI6MTc2NjA1Mjc4NiwiZXhwIjoxNzY2MDUzNjg2fQ.ZqouQR52slOmaMhcU9fPj1MXaM2XAEU1lcRWVkntjxk
+POST http://localhost:3000/api/home/newShift
+Authorization: Bearer {{ACCESS_TOKEN}}
+Content-Type: application/json
+
+{
+  "employeeName": "Test User",
+  "checkIn": "2025-12-18T08:00:00",
+  "checkOut": "2025-12-18T16:00:00",
+  "createdAt": "2025-12-18T07:50:00"
+}
+
+

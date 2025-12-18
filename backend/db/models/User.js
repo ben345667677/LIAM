@@ -3,16 +3,18 @@ import mongoose from "mongoose";
 const userSchema = new mongoose.Schema({
   email: {
     type: String,
-    unique: true
+    unique: true,
+    required: true
   },
 
   password: {
-    type: String
+    type: String,
+    required: true
   },
 
-  isAdmin: {
-    type: Boolean,
-    default: false
+  
+  refreshToken: {
+    type: String
   },
 
   createdAt: {

@@ -1,5 +1,5 @@
 import express from "express";
-import newShift from "../controller/updateShiftHendler.js";
+import newShift from "../controller/updateShiftHandler.js";
 
 const newShiftRouter = express.Router();
 
