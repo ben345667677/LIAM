@@ -1,0 +1,31 @@
+POST http://localhost:3000/api/sign-in
+Content-Type: application/json
+
+{
+  "username": "ben",
+  "email": "ben@gmail.com",
+  "password": "123456"
+}
+####
+####
+
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+  "username": "ben",
+  "password": "123456"
+}
+
+####
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTU2ZmRlOGI4NmU2OWQ3Yzg2ZGE4MmQiLCJpYXQiOjE3NjczNDU5NjgsImV4cCI6MTc2OTkzNzk2OH0.5xY8TnOf15ZNuah9kiL6wIvHg14gP2Sw1EIpyEtp2Wc
+
+POST http://localhost:3000/api/home
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "username": "ben",
+  "password": "123456"
+}
+
